@@ -4,3 +4,5 @@ resources:
   - ../../base/000-helm-repo
   - cert-manager
   - kube-prometheus-stack
+  - ingress-nginx
+  - external-dns
