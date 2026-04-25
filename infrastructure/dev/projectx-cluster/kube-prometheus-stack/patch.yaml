@@ -15,12 +15,13 @@ spec:
         ingressClassName: nginx
         annotations:
           nginx.ingress.kubernetes.io/ssl-redirect: "true"
+          cert-manager.io/cluster-issuer: letsencrypt-prod
         hosts:
-          - grafana-dev.bolunas.com
+          - grafana-dev.ab-demo.click
         tls:
-          - secretName: bolunas-com-tls
+          - secretName: ab-demo-click-tls
             hosts:
-              - grafana-dev.bolunas.com
+              - grafana-dev.ab-demo.click
     prometheus:
       prometheusSpec:
         retention: 15d

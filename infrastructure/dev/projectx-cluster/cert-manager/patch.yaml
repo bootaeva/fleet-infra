@@ -1,0 +1,14 @@
+apiVersion: helm.toolkit.fluxcd.io/v2
+kind: HelmRelease
+metadata:
+  name: cert-manager
+spec:
+  values:
+    fullnameOverride: cert-manager
+    crds:
+      enabled: true
+    serviceAccount:
+      annotations:
+        eks.amazonaws.com/role-arn: arn:aws:iam::570082719665:role/projectx-cluster-dev-cert-manager-role
+    securityContext:
+      fsGroup: 1001
