@@ -8,7 +8,7 @@ spec:
     provider: aws
     txtOwnerId: projectx-cluster-dev
     domainFilters:
-      - bootaeva.dev
+      - bootaeva.com
     serviceAccount:
       annotations:
         eks.amazonaws.com/role-arn: arn:aws:iam::570082719665:role/projectx-cluster-dev-external-dns-role
