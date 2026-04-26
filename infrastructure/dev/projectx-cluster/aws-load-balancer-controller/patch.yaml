@@ -1,0 +1,11 @@
+apiVersion: helm.toolkit.fluxcd.io/v2
+kind: HelmRelease
+metadata:
+  name: aws-load-balancer-controller
+spec:
+  values:
+    clusterName: projectx-cluster-dev
+    vpcId: vpc-0b2aff3e1dbe17429
+    serviceAccount:
+      annotations:
+        eks.amazonaws.com/role-arn: arn:aws:iam::570082719665:role/projectx-cluster-dev-aws-load-balancer-controller-role

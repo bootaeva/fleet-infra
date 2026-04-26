@@ -3,6 +3,7 @@ kind: Kustomization
 resources:
   - ../../base/000-helm-repo
   - cert-manager
+  - aws-load-balancer-controller
   - kube-prometheus-stack
   - ingress-nginx
   - external-dns

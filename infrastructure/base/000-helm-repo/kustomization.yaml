@@ -5,3 +5,4 @@ resources:
   - kube-prometheus-stack.yaml
   - ingress-nginx.yaml
   - external-dns.yaml
+  - aws-load-balancer-controller.yaml
