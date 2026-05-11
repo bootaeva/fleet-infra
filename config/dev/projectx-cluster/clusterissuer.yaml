@@ -12,4 +12,4 @@ spec:
       - dns01:
           route53:
             region: us-east-1
-            hostedZoneID: Z06796301119S3HK476YE
+            
